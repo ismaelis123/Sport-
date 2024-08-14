@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PipoSport</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>PipoSport</h1>
+    </header>
+
+    <div class="contenedor">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                    <li><a href="#productos" onclick="mostrarSeccion('productos')">Productos</a></li>
+                    <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="inicio" class="seccion">
+                <h2>Bienvenido a PipoSport</h2>
+                <p>Encuentra los mejores productos deportivos aquí.</p>
+                <p><strong>Nota:</strong> Este sitio no está totalmente completo.</p>
+            </section>
+
+            <section id="productos" class="seccion oculto">
+                <h2>Productos</h2>
+                <div id="panel-productos"></div>
+                <div id="panel-cliente">
+                    <h3>Datos del Cliente</h3>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                    <label for="departamento">Departamento:</label>
+                    <input type="text" id="departamento">
+                    <button onclick="generarFactura()">Generar Factura</button>
+                </div>
+            </section>
+
+            <section id="contacto" class="seccion oculto">
+                <h2>Contacto</h2>
+                <p>Contáctanos a través de:</p>
+                <ul>
+                    <li><a href="https://wa.me/tu-numero" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100089258300442&mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/_pipo_sports?igsh=eXo4ZDdlcDZpNDFm" target="_blank">Instagram</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PipoSport. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scritps.js"></script>
+</body>
+</html>
